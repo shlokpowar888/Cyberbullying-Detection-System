@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; text-align: center; padding-top: 50px; }
+        .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        h1 { color: #4a4a4a; }
+        .result { margin-top: 20px; font-size: 1.2em; }
+        .safe { color: green; }
+        .offensive { color: orange; }
+        .hate_speech { color: red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <a href="/">Go Back to Home</a>
+        <div class="result">
+            <h3>Comment: <em>"{{ comment }}"</em></h3>
+            <p>Predicted Label: <span class="{{ prediction | lower }}">{{ prediction }}</span></p>
+        </div>
+    </div>
+</body>
+</html>

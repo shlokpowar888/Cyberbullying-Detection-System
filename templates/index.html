@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hinglish Cyberbullying Detector</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; text-align: center; padding-top: 50px; }
+        .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        h1 { color: #4a4a4a; }
+        .mode-selection { margin-top: 30px; }
+        .mode-selection h2 { margin-bottom: 20px; }
+        .mode { border: 1px solid #ccc; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .mode h3 { margin-top: 0; }
+        input[type="file"], textarea { width: 90%; margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ddd; }
+        button { padding: 10px 20px; font-size: 16px; color: #fff; background-color: #5cb85c; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #4cae4c; }
+        #api-input, #csv-input { display: flex; flex-direction: column; align-items: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hinglish Cyberbullying Detector</h1>
+        <div class="mode-selection">
+            <h2>Select an analysis mode:</h2>
+
+            <div class="mode">
+                <h3>1. Analyze a CSV File</h3>
+                <form action="/predict_csv" method="post" enctype="multipart/form-data">
+                    <p>Upload a CSV file with 'user_id' and 'comment' columns.</p>
+                    <input type="file" name="file" accept=".csv" required>
+                    <button type="submit">Analyze CSV</button>
+                </form>
+            </div>
+
+            <div class="mode">
+                <h3>2. Analyze a Single Comment (Simulated API)</h3>
+                <form action="/predict_api" method="post">
+                    <p>Enter a comment to get a real-time prediction.</p>
+                    <textarea name="comment" placeholder="Type your comment here..." required></textarea>
+                    <button type="submit">Predict Comment</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

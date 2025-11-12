@@ -1,0 +1,23 @@
+# Core dependencies
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+python-dotenv
+
+# Machine learning and NLP
+torch
+transformers
+datasets
+scikit-learn
+
+# YouTube API
+google-api-python-client
+
+# PDF generation
+fpdf
+
+# Utility libraries
+joblib
+emoji

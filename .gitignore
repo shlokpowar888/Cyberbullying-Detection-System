@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+*.key
+
+# Dataset and data files
+*.csv
+*.tsv
+*.xlsx
+*.ods
+*.zip
+*.rar
+*.tar.gz
+datasets/
+data/
+
+# Model training logs and outputs
+logs/
+results/
+checkpoints/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Streamlit cache
+.streamlit/
