@@ -1,39 +1,19 @@
-# Virtual environment
+# Environment
 venv/
-ENV/
-env/
-
-# Python cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
 
-# Environment variables
-.env
-*.key
-
-# Dataset and data files
+# Large or generated files
+trained_model/
+results/
+uploads/
 *.csv
 *.tsv
-*.xlsx
-*.ods
 *.zip
-*.rar
-*.tar.gz
-datasets/
-data/
+*.bin
+*.pt
+*.pkl
+*.log
 
-# Model training logs and outputs
-logs/
-results/
-checkpoints/
-
-# OS and editor files
+# System files
 .DS_Store
 Thumbs.db
-.idea/
-.vscode/
-
-# Streamlit cache
-.streamlit/
